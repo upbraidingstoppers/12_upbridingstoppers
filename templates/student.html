@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Page - Stop Ragging</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d1f7db;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #21a072ca;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #56beda;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative; /* To position the button relative to the container */
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="file"] {
+            width: calc(100% - 22px); /* Adjusted width for the border */
+            padding: 10px;
+            border: 1px solid #a1a0a0;
+            border-radius: 5px;
+            background-color: #fff; /* Set background color to white */
+        }
+
+        button[type="submit"] {
+    background-color: #060606;
+    color: #fdfdfd;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px; 
+    bottom: -40px; 
+}
+
+.container {
+    position: relative; 
+}
+        button[type="submit"]:hover {
+            background-color: #fffdfd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>UPBRAIDING STOPPERS</h1>
+    </header>
+
+    <div class="container">
+        <h2>Register Your Complaint</h2>
+        <form action="/student" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="mobile_number">Mobile Number:</label>
+                <input type="text" id="mobile_number" name="mobile_number" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="department">Department:</label>
+                <input type="text" id="department" name="department" required>
+            </div>
+            <div class="form-group">
+                <label for="Complain">Complain:</label>
+                <input type="text" id="Complain" name="Complain" required>
+            </div>
+            <div class="form-group">
+                <label for="section">Section:</label>
+                <input type="text" id="section" name="section" required>
+            </div>
+            <div class="form-group">
+                <label for="roll">Roll:</label>
+                <input type="text" id="roll" name="roll" required>
+            </div>
+            <div class="form-group">
+                <label for="image">Image:</label>
+                <input type="file" id="image" name="image" accept="image/*" >
+            </div>
+            <div class="form-group">
+                <label for="video">Video:</label>
+                <input type="file" id="video" name="video" accept="video/*" >
+            </div>
+            <div class="form-group">
+                <label for="audio">Audio:</label>
+                <input type="file" id="audio" name="audio" accept="audio/*" >
+            </div>
+            <button type="submit">Submit Complaint</button>
+           
+        </form>
+    </div>
+</body>
+</html>
